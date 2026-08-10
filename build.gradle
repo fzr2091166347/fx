@@ -1,0 +1,24 @@
+plugins {
+    id 'java-library'
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+}
+
+dependencies {
+    // 必须用 compileOnly，防止把游戏源码打进 jar 包
+    compileOnly 'com.github.Anuken:arc:146.1'
+    compileOnly 'com.github.Anuken:mindustry:146.1'
+}
+
+jar {
+    archiveName "GamepadControl.jar"
+}
