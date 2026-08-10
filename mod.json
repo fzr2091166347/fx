@@ -1,0 +1,9 @@
+{
+  "name": "GamepadControl",
+  "displayName": "自定义手柄操控",
+  "author": "Self",
+  "main": "gamepad.ModEntry",
+  "version": "1.0",
+  "minGameVersion": "146",
+  "description": "自定义摇杆控制镜头、按键指令"
+}
