@@ -10,10 +10,8 @@ jobs:
         with:
           java-version: '17'
           distribution: 'temurin'
-      # 必须加这行：赋予 gradlew 执行权限
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
-      # 必须加这行：先初始化，避免找不到 build.gradle
       - name: Setup Gradle
         run: ./gradlew clean
       - name: Build with Gradle
